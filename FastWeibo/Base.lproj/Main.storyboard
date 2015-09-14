@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="liN-4Q-PeU">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="BDG-PE-pgb">
+            <objects>
+                <tabBarController id="liN-4Q-PeU" customClass="MainViewController" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="QIf-3O-QZf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="isr-E3-NTm" kind="relationship" relationship="viewControllers" id="05d-1V-Fz6"/>
+                        <segue destination="nSe-3O-YWf" kind="relationship" relationship="viewControllers" id="JtC-c3-51L"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vo6-RN-PVq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="301"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Stc-5E-f2E">
+            <objects>
+                <tableViewController id="uOX-Fc-Mxh" customClass="HomeViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="425" sectionHeaderHeight="22" sectionFooterHeight="22" id="grj-jK-CJh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="uOX-Fc-Mxh" id="A0o-VZ-MoY"/>
+                            <outlet property="delegate" destination="uOX-Fc-Mxh" id="JQR-GN-pUa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="kqB-cD-Nf4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqB-1a-Lil" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1887" y="-111"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="d9v-Wh-rgn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nSe-3O-YWf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="消息" image="tabbar_message_center.png" id="BDW-tm-Knp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kCc-RO-Hld">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6ad-98-xs3" kind="relationship" relationship="rootViewController" id="PY3-zF-reI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUd-Ti-dm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="632"/>
+        </scene>
+        <!--Message View Controller-->
+        <scene sceneID="gOX-oL-fGk">
+            <objects>
+                <viewController id="6ad-98-xs3" customClass="MessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XPQ-sV-Qpl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pe3-TM-c8g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" verticalHuggingPriority="1000" id="FC8-QT-QKb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bM-eG-IgT">
+                                <rect key="frame" x="100" y="164" width="400" height="269"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="751" verticalCompressionResistancePriority="1000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="265" translatesAutoresizingMaskIntoConstraints="NO" id="VE4-S9-XTr">
+                                        <rect key="frame" x="8" y="8" width="384" height="203"/>
+                                        <string key="text">距离 Apple Watch 的发售时间越来越近，关于苹果第一款可穿戴设备的各种传言开始逐渐增多。维多利亚的秘密天使 Candice Swanepoel 佩戴了 Apple Watch 运动版登上了《悦己SELF》3月份杂志封面。消息称Apple Watch 首批出货量在500-600万之间，而18K 金版 Apple Watch Edition 版将是苹果最贵的产品。</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="1000" placeholderIntrinsicWidth="384" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="e38-Kx-01x" customClass="RetweetView">
+                                        <rect key="frame" x="8" y="211" width="384" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="368" translatesAutoresizingMaskIntoConstraints="NO" id="dCh-eH-LqA">
+                                                <rect key="frame" x="8" y="8" width="368" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="dCh-eH-LqA" firstAttribute="leading" secondItem="e38-Kx-01x" secondAttribute="leading" constant="8" id="LJn-HK-LoG"/>
+                                            <constraint firstAttribute="bottom" secondItem="dCh-eH-LqA" secondAttribute="bottom" priority="750" constant="8" id="Yzq-dg-2PA"/>
+                                            <constraint firstItem="dCh-eH-LqA" firstAttribute="top" secondItem="e38-Kx-01x" secondAttribute="top" priority="750" constant="8" id="hvz-62-v2L"/>
+                                            <constraint firstAttribute="trailing" secondItem="dCh-eH-LqA" secondAttribute="trailing" constant="8" id="yRp-LV-kmj"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VE4-S9-XTr" secondAttribute="trailing" constant="8" id="2hs-qd-Kgy"/>
+                                    <constraint firstItem="VE4-S9-XTr" firstAttribute="leading" secondItem="9bM-eG-IgT" secondAttribute="leading" constant="8" id="4AF-Zx-sXh"/>
+                                    <constraint firstItem="e38-Kx-01x" firstAttribute="leading" secondItem="9bM-eG-IgT" secondAttribute="leading" constant="8" id="9km-qM-FSi"/>
+                                    <constraint firstAttribute="bottom" secondItem="e38-Kx-01x" secondAttribute="bottom" constant="8" id="HKf-BK-oY9"/>
+                                    <constraint firstItem="VE4-S9-XTr" firstAttribute="top" secondItem="9bM-eG-IgT" secondAttribute="top" constant="8" id="OW3-04-QpH"/>
+                                    <constraint firstItem="e38-Kx-01x" firstAttribute="top" secondItem="VE4-S9-XTr" secondAttribute="bottom" id="R6f-zU-36W"/>
+                                    <constraint firstItem="VE4-S9-XTr" firstAttribute="top" secondItem="9bM-eG-IgT" secondAttribute="top" constant="8" id="VB7-Ly-8D3"/>
+                                    <constraint firstAttribute="trailing" secondItem="e38-Kx-01x" secondAttribute="trailing" constant="8" id="soy-W8-NJ0"/>
+                                    <constraint firstItem="VE4-S9-XTr" firstAttribute="top" secondItem="9bM-eG-IgT" secondAttribute="top" constant="8" id="zY6-d0-2B8"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OW3-04-QpH"/>
+                                        <exclude reference="zY6-d0-2B8"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUV-Qx-cqA">
+                                <rect key="frame" x="277" y="101" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="6ad-98-xs3" eventType="touchUpInside" id="qZW-xz-eie"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9bM-eG-IgT" firstAttribute="leading" secondItem="FC8-QT-QKb" secondAttribute="leading" constant="100" id="G0t-Sz-IB7"/>
+                            <constraint firstItem="Pe3-TM-c8g" firstAttribute="top" secondItem="9bM-eG-IgT" secondAttribute="bottom" priority="250" constant="218" id="HVf-QX-OBp"/>
+                            <constraint firstItem="9bM-eG-IgT" firstAttribute="top" secondItem="XPQ-sV-Qpl" secondAttribute="bottom" constant="100" id="PXU-AD-7V9"/>
+                            <constraint firstAttribute="trailing" secondItem="9bM-eG-IgT" secondAttribute="trailing" constant="100" id="fsm-sl-ovd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NSu-zl-thF"/>
+                    <connections>
+                        <outlet property="imageView" destination="e38-Kx-01x" id="gdk-VM-6CC"/>
+                        <outlet property="msgLabel" destination="dCh-eH-LqA" id="ufQ-TC-0oW"/>
+                        <outlet property="textLabel" destination="VE4-S9-XTr" id="lEW-JS-0eI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qnq-2z-Ul5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="643"/>
+        </scene>
+        <!--主页-->
+        <scene sceneID="DP4-wC-ijW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="isr-E3-NTm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="主页" image="tabbar_home.png" id="FD5-ir-BbY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u0U-Tm-G1O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uOX-Fc-Mxh" kind="relationship" relationship="rootViewController" id="dqA-Wj-d6q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CR6-dT-rBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995" y="-61"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_home.png" width="30" height="30"/>
+        <image name="tabbar_message_center.png" width="30" height="30"/>
+    </resources>
+</document>

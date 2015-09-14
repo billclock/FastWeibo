@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PicUrlManagedObject" representedClassName="PicUrlManagedObject" syncable="YES">
+        <attribute name="thumbnailPic" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="StatusManagedObject" representedClassName="StatusManagedObject" syncable="YES">
+        <attribute name="attitudesCount" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="commentsCount" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="favorited" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isTimeLine" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="repostsCount" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="statusId" optional="YES" attributeType="Integer 64" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="truncated" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="picUrls" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PicUrlManagedObject" syncable="YES"/>
+        <relationship name="retweetedStatus" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="StatusManagedObject" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="UserManagedObject" syncable="YES"/>
+    </entity>
+    <entity name="UserManagedObject" representedClassName="UserManagedObject" syncable="YES">
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileImageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="screenName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="verified" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PicUrlManagedObject" positionX="351" positionY="-310" width="128" height="58"/>
+        <element name="StatusManagedObject" positionX="234" positionY="-225" width="135" height="240"/>
+        <element name="UserManagedObject" positionX="378" positionY="62" width="135" height="118"/>
+    </elements>
+</model>
