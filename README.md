@@ -10,3 +10,17 @@
 ScreenShots文件夹下有些应用运行起来的截图，可以查看下效果
 
 ## *Just For Fun*
+
+### Screen Shots
+
+![image](https://github.com/billclock/FastWeibo/blob/master/ScreenShots/ScreenShot-01.png?raw=true)
+
+![image](https://github.com/billclock/FastWeibo/blob/master/ScreenShots/ScreenShot-02.png?raw=true)
+
+![image](https://github.com/billclock/FastWeibo/blob/master/ScreenShots/ScreenShot-03.png?raw=true)
+
+![image](https://github.com/billclock/FastWeibo/blob/master/ScreenShots/ScreenShot-04.png?raw=true)
+
+![image](https://github.com/billclock/FastWeibo/blob/master/ScreenShots/ScreenShot-05.png?raw=true)
+
+![image](https://github.com/billclock/FastWeibo/blob/master/ScreenShots/ScreenShot-06.png?raw=true)
