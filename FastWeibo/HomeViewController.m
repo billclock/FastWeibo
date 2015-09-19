@@ -67,6 +67,9 @@
     FWImageListView *imgListView = (FWImageListView *)[imgView superview];
     NSUInteger currentIndex = (imgView.tag - 10);
     
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [window addSubview:self.imageBrowserView];
+    
     [self.imageBrowserView addSubImageViewByImgListView:imgListView currentIndex:currentIndex];
     [self.imageBrowserView performSelector:@selector(playShowAnimation) withObject:nil afterDelay:0.1];
 
@@ -76,9 +79,6 @@
 {
     self.imageBrowserView = [[ImageBrowserView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     self.imageBrowserView.hidden = YES;
-
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
-    [window addSubview:self.imageBrowserView];
     
 }
 

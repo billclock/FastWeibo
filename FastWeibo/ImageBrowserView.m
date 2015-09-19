@@ -92,6 +92,7 @@
         self.alpha = 0;
     } completion:^(BOOL finished) {
         self.hidden = YES;
+        [self removeFromSuperview];
     }];
 }
 
